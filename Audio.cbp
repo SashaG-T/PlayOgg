@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PlayOgg" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/PlayOgg" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="D:/SDKs/libogg/win32/VS2015/Win32/Debug/libogg.lib" />
+					<Add library="D:/SDKs/vorbis-46e70fa/win32/VS2010/Win32/Debug/libvorbis.lib" />
+					<Add library="D:/SDKs/vorbis-46e70fa/win32/VS2010/Win32/Debug/libvorbisfile.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/PlayOgg" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="resources/Afternoon.ogg" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="D:/SDKs/libogg/win32/VS2015/Win32/Release/libogg.lib" />
+					<Add library="D:/SDKs/vorbis-46e70fa/win32/VS2010/Win32/Release/libvorbis.lib" />
+					<Add library="D:/SDKs/vorbis-46e70fa/win32/VS2010/Win32/Release/libvorbisfile.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/Program Files (x86)/OpenAL 1.1 SDK/include" />
+			<Add directory="D:/SDKs/libogg/include" />
+			<Add directory="D:/SDKs/vorbis-46e70fa/include" />
+		</Compiler>
+		<Linker>
+			<Add library="C:/Program Files (x86)/OpenAL 1.1 SDK/libs/Win32/OpenAL32.lib" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
